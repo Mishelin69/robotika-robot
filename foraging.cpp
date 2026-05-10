@@ -65,8 +65,8 @@ bool move_forward_and_check() {
       break;
     }
     
-    delay(50);
-    time_driven += 50;
+    delay(10);
+    time_driven += 10;
   }
 
   car.Move(Stop, 0);

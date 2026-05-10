@@ -17,6 +17,7 @@ bool is_line_in_front_of_car() {
 
   int left_dst = linetracking_get_left_dist();
   int right_dst = linetracking_get_right_dist();
+  Serial.printf("left: %d right: %d\n", left_dst,right_dst);
 
   return left_dst < BLACK_LINE && right_dst < BLACK_LINE;
 }
@@ -29,7 +30,7 @@ bool does_any_sensor_see_black() {
   int left_dst = linetracking_get_left_dist();
   int right_dst = linetracking_get_right_dist();
 
-  return left_dst <= 300 || right_dst <= 1000;
+  return left_dst <= 1000 && right_dst <= 2000;
 }
 
 int linetracking_get_left_dist() {

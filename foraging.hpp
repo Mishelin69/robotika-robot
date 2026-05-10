@@ -4,10 +4,10 @@
 #define NUM_OF_ALLOWED_FAILS (1)
 #define DANGEROUS_DISTANCE_CM (15)
 
-#define LEVY_BETA (1.2)
+#define LEVY_BETA (0.8)
 #define MIN_STEP_TIME_MS (400)
-#define MAX_STEP_TIME_MS (3000)
-#define FOUND_TARGET_TIMES (5)
+#define MAX_STEP_TIME_MS (2000)
+#define FOUND_TARGET_TIMES (20)
 
 void init_car();
 
